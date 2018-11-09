@@ -1,0 +1,24 @@
+{
+  "name": "minimal-script-loader",
+  "version": "1.0.0",
+  "description": "Minimal browser library to import JS and CSS and to use XHR easily.",
+  "main": "script-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/browserify script-loader.js --standalone ScriptLoader > dist/script-loader.js",
+    "docs": "./node_modules/.bin/javadoc -i script-loader.js -o README.md -f markdown"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xhr": "^2.5.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "javadoc": "^1.0.3"
+  },
+  "browser": {
+    "request": "xhr"
+  }
+}
