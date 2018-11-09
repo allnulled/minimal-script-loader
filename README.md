@@ -3,7 +3,7 @@
 
 # minimal-script-loader
 
-
+![](https://img.shields.io/badge/minimal-script-loader-v1.0.0-green.svg) 
 
 
 Minimal browser library to import JS and CSS and to use XHR easily.
@@ -19,7 +19,7 @@ Minimal browser library to import JS and CSS and to use XHR easily.
 #### a. Via `script` tag:
 
 ```html
-< script src="node_modules/minimal-script-loader/dist/script-loader.js" >< /script >
+<script src="node_modules/minimal-script-loader/dist/script-loader.min.js"></script>
 ```
 
 If so, the library will be available at `ScriptLoader` global variable.
@@ -40,7 +40,7 @@ A demo of each type of call (`js`, `css` and `xhr`) is shown below.
 
 ### Load a external JS file:
 
-```
+```js
 ScriptLoader.js("https://cdnjs.cloudflare.com/ajax/libs/qunit/2.8.0/qunit.js")
  .then(function() {
    console.log("QUnit was loaded successfully!");
@@ -52,7 +52,7 @@ ScriptLoader.js("https://cdnjs.cloudflare.com/ajax/libs/qunit/2.8.0/qunit.js")
 
 ### Load a external CSS file:
 
-```
+```js
 ScriptLoader.css("https://cdnjs.cloudflare.com/ajax/libs/qunit/2.8.0/qunit.css")
  .then(function() {
    console.log("QUnit (stylesheet) was loaded successfully!");
@@ -64,7 +64,7 @@ ScriptLoader.css("https://cdnjs.cloudflare.com/ajax/libs/qunit/2.8.0/qunit.css")
 
 ### Load a external XHR file:
 
-```
+```js
 ScriptLoader.xhr({
    url: "/",
    method: "GET",
@@ -80,13 +80,13 @@ ScriptLoader.xhr({
  });
 ```
 
-## API Reference
-
 
 
 
  
 
+
+## API Reference
 
 ### class `ScriptLoader`
 
