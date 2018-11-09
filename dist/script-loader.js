@@ -460,7 +460,7 @@ const xhr = require("xhr");
  * 
  * # minimal-script-loader
  * 
- * ![](https://img.shields.io/badge/minimal-script-loader-v1.0.0-green.svg) 
+ * ![](https://img.shields.io/badge/minimal--script--loader-v1.0.0-green.svg) ![](https://img.shields.io/badge/no-tests%20yet-red.svg) 
  * 
  * 
  * Minimal browser library to import JS and CSS and to use XHR easily.
