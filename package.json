@@ -5,7 +5,7 @@
   "main": "script-loader.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/browserify script-loader.js --standalone ScriptLoader > dist/script-loader.js",
+    "build": "./node_modules/.bin/browserify script-loader.js --standalone ScriptLoader > dist/script-loader.js && ./node_modules/.bin/uglifyjs dist/script-loader.js > dist/script-loader.min.js",
     "docs": "./node_modules/.bin/javadoc -i script-loader.js -o README.md -f markdown"
   },
   "keywords": [],
@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "browserify": "^16.2.3",
-    "javadoc": "^1.0.3"
+    "javadoc": "^1.0.3",
+    "uglify-js": "^3.4.9"
   },
   "browser": {
     "request": "xhr"
