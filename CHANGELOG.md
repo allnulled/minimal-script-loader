@@ -13,16 +13,19 @@ All notable changes of [minimal-script-loader](https://github.com/allnulled/mini
 
 Actions: **Added | Changed | Deprecated | Removed | Fixed | Security**
 
+----
+
 ## Unreleased - today
 
 - Add asynchronous parallel js/xhr loading support.
 - Add synchronous series js/xhr loading support.
 - Make the API support `async/await` ES6 syntax.
 
+----
+
 ## 1.0.0 - 9/11/2018 22:00
 
-Releasing first version.
-
+- Started project.
 - Class ScriptLoader (with support for `Browserify`).
 - Static methods `js`, `css` and `xhr` to simply load external data.
 - Added README and CHANGELOG.
@@ -30,4 +33,15 @@ Releasing first version.
 
 ### Added
 
-- Started project.
+- Line separators to README API Reference items.
+
+### Fixed
+
+- Parameter hardcoded into `css` function, fixed.
+
+## 1.0.1 - 10/11/2018 11:55am
+
+- Fixed important error in `css` function.
+
+
+

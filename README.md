@@ -88,6 +88,8 @@ ScriptLoader.xhr({
 
 ## API Reference
 
+----
+
 ### class `ScriptLoader`
 
 
@@ -102,6 +104,8 @@ ScriptLoader.xhr({
 
  
 
+
+----
 
 ### static method `ScriptLoader.js(url)`
 
@@ -120,6 +124,8 @@ ScriptLoader.xhr({
  
 
 
+----
+
 ### static method `ScriptLoader.css(url)`
 
 
@@ -136,6 +142,8 @@ ScriptLoader.xhr({
 
  
 
+
+----
 
 ### static method `ScriptLoader.xhr(options)`
 

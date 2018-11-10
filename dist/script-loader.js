@@ -543,6 +543,8 @@ const xhr = require("xhr");
  * 
  * ## API Reference
  * 
+ * ----
+ * 
  * ### class `ScriptLoader`
  * 
  * @type class
@@ -553,6 +555,8 @@ const xhr = require("xhr");
 class ScriptLoader {
 
 	/**
+	 * 
+	 * ----
 	 * 
 	 * ### static method `ScriptLoader.js(url)`
 	 * 
@@ -574,6 +578,8 @@ class ScriptLoader {
 
 	/**
 	 * 
+	 * ----
+	 * 
 	 * ### static method `ScriptLoader.css(url)`
 	 * 
 	 * @type static class method
@@ -586,12 +592,14 @@ class ScriptLoader {
 		const l = document.createElement("link");
 		l.setAttribute("rel", "stylesheet");
 		l.setAttribute("type", "text/css");
-		l.setAttribute("href", "test/qunit.css");
+		l.setAttribute("href", url);
 		document.body.appendChild(l);
 		return new Promise(resolve => resolve());
 	}
 
 	/**
+	 * 
+	 * ----
 	 * 
 	 * ### static method `ScriptLoader.xhr(options)`
 	 * 
