@@ -152,7 +152,7 @@ ScriptLoader.xhr({
 
 **Parameter:** `{Object} options`.
 
-**Returns:** `{Promise} promise`. A `Promise` that will be `resolved`/`rejected` once the stylesheet is `loaded`/`failed`.
+**Returns:** `{Promise} promise`. A `Promise` that will be `resolved`/`rejected` once the XHR call is `loaded`/`failed`.
 
 **Description:** This method is exactly [this function](https://github.com/naugtur/xhr#example). Refer to it for more information.
 
