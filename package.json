@@ -4,8 +4,10 @@
   "description": "Minimal browser library to import JS and CSS and to use XHR easily.",
   "main": "script-loader.js",
   "scripts": {
+    "upload": "npm run docs && npm run build && gitanoaddfile README.md CHANGELOG.md script-loader.js package.json dist/script-loader.js npm-shrinkwrap.json dist/script-loader.min.js && gitanopush",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/browserify script-loader.js --standalone ScriptLoader > dist/script-loader.js && ./node_modules/.bin/uglifyjs dist/script-loader.js > dist/script-loader.min.js",
+    "serve": "./node_modules/.bin/http-server -R . -p 9292",
     "docs": "./node_modules/.bin/javadoc -i script-loader.js -o README.md -f markdown"
   },
   "keywords": [],
@@ -16,7 +18,10 @@
   },
   "devDependencies": {
     "browserify": "^16.2.3",
+    "http-server": "^0.11.1",
     "javadoc": "^1.0.3",
+    "qunit": "^2.8.0",
+    "uglify-es": "^3.3.9",
     "uglify-js": "^3.4.9"
   },
   "browser": {

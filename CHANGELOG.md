@@ -39,9 +39,20 @@ Actions: **Added | Changed | Deprecated | Removed | Fixed | Security**
 
 - Parameter hardcoded into `css` function, fixed.
 
+### Added
+
+- Simple test example importing QUnit.
+
+### Added
+
+- Command `npm run serve` for the tests to work fine.
+
 ## 1.0.1 - 10/11/2018 11:55am
 
+- Added line separators to README API Reference items.
 - Fixed important error in `css` function.
+- Added a simple test example importing QUnit.
+- Added a `npm run serve` command for the tests to work fine.
 
 
 
